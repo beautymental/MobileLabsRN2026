@@ -1,7 +1,7 @@
 # Лабораторна 1
 ## Встановлення та запуск:
 ### спочатку потрібно склонувати проєкт:
-git clone https://github.com/kerosene2562/MobileLabsRN2025
+git clone https://github.com/beautymental/MobileLabsRN2026
 ### Встановити залежності
 Node.js
 npm install @react-navigation/native
