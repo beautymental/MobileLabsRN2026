@@ -37,7 +37,7 @@ import GalleryScreen from "./src/screens/GalleryScreen";
                     </Tab.Navigator>
                 </NavigationContainer>
                 <Text style = {styles.footer}>
-                    Романець Олександр Андрійович, ІПЗк-24-1
+                    Домбровський Богдан, ІПЗк-24-1
                 </Text>
             </View>
         );
