@@ -1,0 +1,7 @@
+import React from 'react'; import {View,Text,Pressable,StyleSheet,VirtualizedList,TextInput} from 'react-native'; import {SafeAreaView} from 'react-native-safe-area-context';
+export const blue='#2459C4';
+export const s=StyleSheet.create({page:{flex:1,backgroundColor:'#F1F5F9',padding:16},title:{fontSize:25,fontWeight:'800',color:'#14213D',marginBottom:12},body:{fontSize:15,color:'#334155'},card:{backgroundColor:'white',borderRadius:12,padding:12,marginBottom:8},row:{flexDirection:'row',alignItems:'center',justifyContent:'space-between',gap:8},input:{backgroundColor:'white',borderWidth:1,borderColor:'#CBD5E1',borderRadius:8,padding:12,marginBottom:12,color:'#14213D'}});
+export function Page({children}){return <SafeAreaView edges={['bottom','left','right']} style={s.page}>{children}</SafeAreaView>}
+export function Btn({title,onPress}){return <Pressable accessibilityRole="button" onPress={onPress} style={{backgroundColor:blue,padding:12,borderRadius:8,marginVertical:5}}><Text style={{color:'white',fontWeight:'700',textAlign:'center'}}>{title}</Text></Pressable>}
+export function Field(props){return <TextInput placeholderTextColor="#64748B" style={s.input} {...props}/>}
+export function VList({data,render}){return <VirtualizedList data={data} getItem={(a,i)=>a[i]} getItemCount={a=>a.length} keyExtractor={x=>x.id} getItemLayout={(_,i)=>({length:104,offset:104*i,index:i})} initialNumToRender={8} maxToRenderPerBatch={8} windowSize={7} renderItem={({item})=><View style={{height:104}}>{render(item)}</View>} ListEmptyComponent={<Text>Немає записів</Text>}/>}

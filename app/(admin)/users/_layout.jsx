@@ -1,0 +1,1 @@
+import React from 'react';import {Stack} from 'expo-router';export default function Layout(){return <Stack screenOptions={{headerShown:false}}><Stack.Screen name="index"/><Stack.Screen name="filter" options={{presentation:'formSheet',sheetAllowedDetents:[0.5,1]}}/></Stack>}
