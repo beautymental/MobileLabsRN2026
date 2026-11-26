@@ -2,7 +2,7 @@
 
 1. **Клонування репозиторію**
     ```bash
-    git clone https://github.com/kerosene2562/MobileLabsRN2025.git
+    git clone git clone -b lab4 https://github.com/beautymental/MobileLabsRN2026.git
     ```
 
 2. **Встановлення залежностей**
